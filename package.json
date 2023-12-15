@@ -18,7 +18,8 @@
     "build": "react-scripts build && cp -rf build ../notes-backend && rm -rf build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server -p3001 --watch db.json"
+    "server": "json-server -p3001 --watch db.json",
+    "lint": "eslint ."
   },
   "eslintConfig": {
     "extends": [
@@ -39,7 +40,14 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jest": "^27.6.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
     "json-server": "^0.17.1"
   },
   "proxy": "http://localhost:3001"
